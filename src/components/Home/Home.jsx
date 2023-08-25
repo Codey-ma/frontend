@@ -1,11 +1,10 @@
 import React from 'react'
-import QandA from '../QandA/QandA'
+import FAQ from '../FAQ/FAQ'
 
 const Home = () => {
   return (
     <div>
-      Home
-      {/* <QandA /> */}
+      <FAQ/>
     </div>
   )
 }
