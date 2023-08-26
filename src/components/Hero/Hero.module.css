@@ -1,0 +1,173 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem 1rem 8rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero__title {
+  color: var(--gray-900, #101828);
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.5rem; /* 112.5% */
+  letter-spacing: -0.08rem;
+}
+
+/* Highlight The fourth word */
+.hero__title span {
+    background: url("../../assets/images/heroWordBg.svg") no-repeat center;
+    background-size: 100% 100%;
+    padding: 2rem 1ch;
+}
+
+.hero__description {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__button {
+  display: inline-flex;
+  padding: 1rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 1px solid #f9f9f9;
+  background: #020202;
+  box-shadow: 0px 2.4000000953674316px 8.612500190734863px 0px
+      rgba(0, 0, 0, 0.02),
+    0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+}
+
+.hero__button .hero__button__text {
+  color: var(--secondary-color-white, var(--white, #fff));
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero__button__secondary {
+  display: inline-flex;
+  background: var(--white, #fff);
+  padding: 1rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 1px solid #000;
+}
+
+.hero__button__secondary .hero__button__text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero__search__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  padding: 1rem 1.25rem;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6.25rem;
+  border: 1px solid #f9f9f9;
+  background: var(--white, #fff);
+  box-shadow: 0px 2.4000000953674316px 8.612500190734863px 0px
+      rgba(0, 0, 0, 0.1),
+    0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+}
+
+.hero__search__select {
+  display: flex;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  gap: 7.1875rem;
+  color: #747474;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+
+.hero__search__divider {
+  width: 2px;
+  height: 2.5rem;
+  background: #e0e0e0;
+}
+
+.hero__search__input {
+  border: none;
+  outline: none;
+  color: #747474;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 0 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero__search__button {
+  display: flex;
+  padding: 1rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 1px solid #f9f9f9;
+  background: #1e1e1e;
+  box-shadow: 0px 2.4000000953674316px 8.612500190734863px 0px
+      rgba(0, 0, 0, 0.02),
+    0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+}
+
+.hero__search__button .hero__search__button__text {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

@@ -1,0 +1,56 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* target first div child of stat */
+.stat > div:first-child {
+  display: flex;
+  padding: 1.25rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 62.5rem;
+}
+
+.icon1 {
+  background: linear-gradient(180deg, #2af9b1 0%, #20b486 100%);
+}
+
+.icon2 {
+    background: linear-gradient(180deg, #383FDC 0%, #170A56 100%);
+}
+
+.icon3 {
+background: linear-gradient(180deg, #F4F817 0%, #C7C951 100%);
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.statText>div:first-child {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.015rem;
+}
+
+.statText>div:last-child {
+    color: var(--gray-600, #52565C);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
