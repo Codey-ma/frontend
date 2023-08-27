@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero'
 import Stats from '../Stats/Stats'
 import About from '../About/About'
 import Info from '../Info/Info'
+import Educators from '../Educators/Educators'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Stats/>
       <About/>
       <Info/>
+      <Educators/>
       <FAQ/>
     </div>
   )
