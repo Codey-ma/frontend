@@ -5,11 +5,13 @@ import auth from '../../assets/images/auth.png'
 import facebookC from '../../assets/images/facebookC.png'
 import googleC from '../../assets/images/googleC.png'
 import appleC from '../../assets/images/appleC.png'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
   return (
     <div className={styles.login}>
-      <div className={styles.icon}>
+      <div className={styles.icon} onClick={() => navigate('/')}>
         <img src={logo} alt="logo" />
         Codey
       </div>
