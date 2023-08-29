@@ -19,21 +19,20 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/" element={<Home/>} />
-            <Route path="/events" element={<Events/>} />
-            <Route path="/events/:slug" element={<Event/>} />
-            <Route path="/team" element={<Team/>} />
-            <Route path="/courses" element={<Courses/>} />
-            <Route path="/courses/:slug" element={<Courses/>} />
-            <Route path="/blogs" element={<Blogs/>} />
-            <Route path="/blogs/:slug" element={<Blog/>} />
-            <Route path="/profile" element={<Profile/>} />
-            <Route path="/auth" element={<Auth/>}>
-              <Route path="/auth/login" element={<Login/>} />
-              <Route path="/auth/register" element={<Register/>} />
-            </Route>
-            <Route path="*" element={<NotFound/>} />
-
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/events/:slug" element={<Event />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/courses/:slug" element={<Courses />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<Blog />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+          <Route path="/auth" element={<Auth />}>
+            <Route path="/auth/login" element={<Login />} />
+            <Route path="/auth/register" element={<Register />} />
           </Route>
         </Routes>
       </Router>

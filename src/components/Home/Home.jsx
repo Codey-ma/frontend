@@ -5,6 +5,8 @@ import Stats from '../Stats/Stats'
 import About from '../About/About'
 import Info from '../Info/Info'
 import Educators from '../Educators/Educators'
+import OurEvents from '../OurEvents/OurEvents'
+import OurBlogs from '../OurBlogs/OurBlogs'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <About/>
       <Info/>
       <Educators/>
+      <OurEvents/>
+      <OurBlogs/>
       <FAQ/>
     </div>
   )

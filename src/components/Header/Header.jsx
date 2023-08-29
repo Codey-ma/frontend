@@ -3,15 +3,16 @@ import styles from './Header.module.css';
 import logo from '../../assets/logo.svg';
 import search from '../../assets/icons/search.svg';
 import rightArrow from '../../assets/icons/rightArrow.svg';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const currentPath = location.pathname.split('/')[1];
   console.log(currentPath);
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={() => navigate('/')}>
         <img src={logo} alt="logo" />
         <span className={styles.logoText}>
           Codey
@@ -40,7 +41,7 @@ const Header = () => {
         <button className={styles.searchButton}>
           <img src={search} alt="search" />
         </button>
-        <button className="button-main">
+        <button className="button-main" onClick={() => navigate('/auth/login')}>
           <span className="button-main-text">Join Us</span>
           <span className="button-main-icon">
             <img src={rightArrow} alt="login" />
