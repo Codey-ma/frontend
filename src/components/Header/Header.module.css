@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 8.25rem;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: -0.7rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav ul li {
+  display: flex;
+  padding: 0.5rem 0.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #747474;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav ul li.active {
+  border-bottom: 2px solid #10c843;
+}
+
+.nav ul li.active a {
+  color: #10c843;
+}
+
+.nav ul li:hover {
+  border-bottom: 2px solid #10c843;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.searchButton {
+  display: inline-flex;
+  padding: 1.125rem;
+  align-items: center;
+  border-radius: 6.25rem;
+  border: 1px solid #e0e0e0;
+  background: #f2f2f2;
+}

@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 18rem;
+}
+
+
+.footerTop {
+  position: absolute;
+  z-index: 2;
+  bottom: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding: 3.5rem 18rem;
+  border-radius: 0.625rem;
+  margin: 0 10rem;
+  background: url("../../assets/images/footerBack.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.footerTop__title {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem; /* 138.889% */
+}
+
+.footerTop__subTitle {
+  color: #c4c810;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 1.5rem */
+}
+
+.footerMain {
+  z-index: 1;
+  padding: 14rem 8.25rem 1rem 8.25rem;
+  background: #141414;
+}
+
+/* Footer Main Content */
+.footerMain__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+
+.footerMain__hr {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  height: 0.0625rem;
+  background: rgba(84, 84, 84, 0.4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.social {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  margin-top: 0.25rem;
+}
+
+/* Footer Main CopyRight */
+
+.footerMain__copyRight {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
