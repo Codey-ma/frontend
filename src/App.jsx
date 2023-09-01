@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Events from './components/Events/Events';
 import Team from './components/Team/Team';
 import Courses from './components/Courses/Courses';
+import Course from "./components/Course/Course";
 import Blogs from './components/Blogs/Blogs';
 import Event from "./components/Event/Event";
 import Blog from "./components/Blog/Blog";
@@ -24,7 +25,7 @@ function App() {
             <Route path="/events/:slug" element={<Event />} />
             <Route path="/team" element={<Team />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/courses/:slug" element={<Courses />} />
+            <Route path="/courses/:slug" element={<Course />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<Blog />} />
             <Route path="/profile" element={<Profile />} />

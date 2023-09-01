@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+.courses {
+  width: 85%;
+  margin: 0 auto 4rem auto;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+}
+
+.courses__title {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 64px;
+  font-family: Poppins;
+  font-weight: 900;
+  color: var(--blk, #000);
+  text-align: center;
+}
+
+.courses__title span {
+  background: url("../../assets/images/coursesWordBg.svg") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.courses__subtitle {
+  color: var(--blk, #000);
+  text-align: center;
+  font-family: Paytone One;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.courses__grid {
+  display: grid;
+  place-items: center;
+  gap: 64px 10px;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.course__slider__container {
+  width: 100%;
+}
+
+.courses__search {
+  display: flex;
+  margin: 2rem auto;
+  width: 64%;
+  padding: 0.6rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6.25rem;
+  border: 1px solid #f9f9f9;
+  background: var(--white, #fff);
+  box-shadow: 0px 2.4000000953674316px 8.612500190734863px 0px
+      rgba(0, 0, 0, 0.1),
+    0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+  font-style: normal;
+  line-height: normal;
+}
+
+.courses__search__select {
+  display: flex;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  color: #747474;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+.courses__search__divider {
+  width: 2px;
+  height: 2.5rem;
+  background: #e0e0e0;
+}
+
+.courses__search__input {
+  border: none;
+  outline: none;
+  color: #747474;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.courses__search__button {
+  display: flex;
+  padding: 1rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 1px solid #f9f9f9;
+  background: #1e1e1e;
+  box-shadow: 0px 2.4000000953674316px 8.612500190734863px 0px
+      rgba(0, 0, 0, 0.02),
+    0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+}
+
+.courses__search__button .courses__search__button__text {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .courses__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .courses__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1020px) {
+  .courses__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
