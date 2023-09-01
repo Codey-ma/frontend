@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.course {
+  width: 85%;
+  margin: 0 auto 8rem auto;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+}
+
+.course__container {
+  display: grid;
+  gap: 20px;
+  margin-top: 4rem;
+  place-items: center;
+}
+
+.course__content {
+  width: 90%;
+}
+
+.course__sidebar {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .course__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .course__container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1020px) {
+  .course__container {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.course__title {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 48px;
+  font-family: Poppins;
+  font-weight: 900;
+  color: var(--blk, #000);
+  text-align: center;
+}
+
+.course__subtitle {
+  color: var(--blk, #000);
+  text-align: center;
+  font-family: Paytone One;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.course__summary {
+  border-radius: 12px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  font-family: Source Code Pro;
+}
+
+.course__thumbnail {
+  width: 100%;
+}
+
+.course__summary__body {
+  padding: 1rem 2rem;
+}
+
+.course__summary__body h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.course__summary p {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.course__summary ul {
+  list-style-type: none;
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+  color: #666;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.course__summary li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.course__summary li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icons/checkBullet.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.course__summary section {
+  padding: 1rem;
+}
+
+.course__summary section h2 {
+  color: #3c3c43;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.course__summary section p {
+  color: #3c3c43;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.course__summary section h4 {
+  color: #3c3c43;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0.5rem 0;
+}
+
+.course__divider {
+  border: none;
+  border-top: 2px dashed #ccc;
+}
+
+.course__flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.course__published {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 0.4rem;
+}
+
+.course__publisher {
+  color: #666;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.course__modules__title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Poppins;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.course__add__btn {
+  padding: 1.2rem 2.2rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 12px;
+  border: 1px solid #1fd891;
+  background: #1fd891;
+  display: block;
+  margin: 1.2rem auto;
+}
+
+.course__edu {
+  margin: 0.5rem 0;
+}
+
+.course__edu img {
+  width: 46px;
+  border-radius: 100%;
+}
+
+.course__edu p {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 0.4rem;
+}
+
+.course__edu h3 {
+  color: var(--blk, #000);
+  font-family: Poppins;
+  font-size: 18px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.course__module {
+  display: flex;
+  width: 90%;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+.module__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.module__title {
+  color: var(--blk, #000);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.module__description {
+  color: #3c3c43;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.module__start__button {
+  color: var(--white, #fff);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid #3c3c43;
+  background: #3c3c43;
+}
