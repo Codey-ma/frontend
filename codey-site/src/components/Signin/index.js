@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 import { FaFacebook, FaGoogle, FaApple } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const Signin = () => {
   return (
@@ -17,8 +19,7 @@ const Signin = () => {
   <div class="Section2">
       <div class="SignIn">Sign in to</div>
       <div class="YourAcc">Your Account</div>
-      <div class="IfYouD">If you don't have an account register</div>
-      <a href="/signup" class="YouCan">Register here</a>
+      <p>If you don't have an account, you can <Link to="/signup">Register here</Link>.</p>
   </div>
 
 

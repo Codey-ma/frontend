@@ -1,8 +1,10 @@
 import React from 'react';
 import './index.css';
 import { FaFacebook, FaGoogle, FaApple } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Signin = () => {
+
+const Signup = () => {
   return (
 <div class="signupContainer">
   
@@ -16,9 +18,7 @@ const Signin = () => {
   <div class="Section2">
       <div class="SignIn">Sign up to</div>
       <div class="YourAcc">Become A Youth Coder</div>
-      <div class="IfYouD">If you already have an account</div>
-      <p>You can Login</p>
-      <a href="/signup" class="YouCan">You can Login here</a>
+      <p>If you already have an account, you can <Link to="/signin">Login here</Link>.</p>
   </div>
 
 
@@ -50,4 +50,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signup
