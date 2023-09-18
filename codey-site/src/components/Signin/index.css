@@ -1,0 +1,41 @@
+.signInContainer{
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    border-radius: 0px;
+    position: relative;
+    isolation: isolate;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: auto;
+    width: 100wv;
+}
+h1{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0px;
+    display: flex;
+    position: relative;
+    isolation: isolate;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 723.5174458535274px 0px 15px;
+    box-sizing: border-box;
+    align-self: stretch;
+    margin: 0px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #333; /* Icon color */
+    margin-right: 10px; /* Adjust spacing between icons */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+  
+    /* Define hover effect */
+    &:hover {
+      color: #007bff; /* Change color on hover */
+    }
+}
