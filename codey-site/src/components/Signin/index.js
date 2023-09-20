@@ -71,7 +71,7 @@ const Signin = () => {
             <input type="text" class="Text-sm input-field" placeholder="Enter email or user name" />
             </div>
           </div>
-          <div className="bg-[rgba(31,_216,_145,_0.26)] flex flex-row justify-between w-[369px] h-16 shrink-0 items-center px-8 rounded-lg">
+          <div className="bg-[rgba(31,_216,_145,_0.26)] flex flex-col justify-between w-[369px] h-16 shrink-0 items-center px-8 rounded-lg">
           <input type="password" class="Text-sm input-field" placeholder="Password" />
             
           </div>
