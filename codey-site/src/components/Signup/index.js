@@ -46,7 +46,7 @@ const Signup = () => {
                 If you already have an account
               <div className="font-['Poppins']" id="YouCanLoginrHere1">
                 You can{" "}
-                 <Link to="/signup" className="font-semibold custom-link" id="YouCanLoginHere">Login here</Link>
+                 <Link to="/signin" className="font-semibold custom-link" id="YouCanLoginHere">Login here</Link>
                 
               </div>
             </div>
