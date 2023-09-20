@@ -1,36 +1,39 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-
-.signInContainer{
-    
+.signinContainer{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   height: 100vh;
+   max-height: 100vh;
    background-color: #f7f7f7;
-   width: 1440px;
-   height: 900px;
+  
+  
 }
 
-h1{
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 0px;
-    display: flex;
-    position: relative;
-    isolation: isolate;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 15px 723.5174458535274px 0px 15px;
-    box-sizing: border-box;
-    align-self: stretch;
-    margin: 0px;
+/** logo **/
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
+.logo{
+  margin-left: 4px;
+}
+.logo-second {
+  margin-top: 4px; 
+  margin-left: -2px; 
+}
+
+/** signin section **/
+#signin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 4rem; 
+}
+
 
 .social-icon {
     text-decoration: none;
@@ -43,3 +46,118 @@ h1{
       color: #007bff; /* Change color on hover */
     }
 }
+
+/* Add styles for the #signin-form section */
+#signin-form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 700px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #signin-form .text-3xl {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Style the input fields */
+  #signin-form input[type="text"],
+  #signin-form input[type="password"] {
+    background-color: rgba(31, 216, 145, 0.26);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  
+  
+  #signin-form #Invisible {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Style the 'Forgot password?' text */
+  #signin-form .text-xs {
+    font-family: 'Poppins', sans-serif;
+    color: #b0b0b0;
+    margin-right: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the login button */
+  #signin-form button {
+    background-color: #1fd891;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  #signin-form .text-medium {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #b5b5b5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the social icons */
+  #signin-form .flex img {
+    cursor: pointer;
+  }
+  
+
+  
+  
+  #signin .flex-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    gap: 5px;
+    width: 50%;
+    align-items: flex-end;
+  }
+  
+  #signin .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+  }
+  
+  #signin #SignInTo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #signin .text-4xl {
+    font-size: 24px;
+    font-weight: medium;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  
+  #signin #YouCanRegisterHere1 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #signin #YouCanRegisterHere {
+    font-weight: bold;
+    color: #4d47c3;
+  }
+  
+  #signin img#Saly {
+    margin-top: 16px;
+  }
+  
