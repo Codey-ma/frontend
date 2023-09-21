@@ -58,7 +58,7 @@ const Signin = () => {
         <div>
         <img
             src={Saly}
-            className="mt-[102px]"
+            className="mt-[12px]"
             id="Saly"
           />
         </div>
@@ -66,12 +66,12 @@ const Signin = () => {
           <div className="text-3xl font-['Poppins'] font-medium mb-3">
             Sign in
           </div>
-          <div className="bg-[rgba(31,_216,_145,_0.26)] flex flex-col justify-center pl-6 w-[369px] h-16 shrink-0 items-start mb-5 mr-px rounded-lg">
+          <div className="">
             <div className="font-['Poppins']">
             <input type="text" class="Text-sm input-field" placeholder="Enter email or user name" />
             </div>
           </div>
-          <div className="bg-[rgba(31,_216,_145,_0.26)] flex flex-col justify-between w-[369px] h-16 shrink-0 items-center px-8 rounded-lg">
+          <div className="">
           <input type="password" class="Text-sm input-field" placeholder="Password" />
             
           </div>
@@ -84,26 +84,26 @@ const Signin = () => {
                 </button>
             </div>
           
-          <div className="font-['Poppins'] font-medium text-[#b5b5b5] mb-6">
+          <div className="font-['Poppins'] text-medium text-[#b0b0b0] self-end mb-10">
             or continue with
           </div>
-          <div className="flex flex-row gap-5 w-40 items-center" id='social-icons'>
-            <img
-              src={Facebook}
-              className="w-10 shrink-0 mt-px mr-px social-icon"
-              id="Facebook"
-            />
-            <img
-              src={Apple}
-              className="w-10 shrink-0 social-icon"
-              id="Apple"
-            />
-            <img
-              src={Google}
-              className="w-10 shrink-0 social-icon"
-              id="Google"
-            />
-          </div>
+          <div className="flex flex-row gap-5 w-40 items-start" id="social-icons">
+                <img
+                  src={Facebook}
+                  className="w-10 shrink-0 mt-px mr-px social-icon"
+                  id="Facebook"
+                />
+                <img
+                  src={Apple}
+                  className="w-10 shrink-0 social-icon"
+                  id="Apple"
+                />
+                <img
+                  src={Google}
+                  className="w-10 shrink-0 social-icon"
+                  id="Google"
+                />
+              </div>
         </div>
       </div>
     </div>
