@@ -1,4 +1,6 @@
-
+:root{
+  --background: #f5f8ff;
+}
 
 * {
   box-sizing: border-box;
@@ -23,7 +25,18 @@ body {
 }
 a.custom-link {
   color: #4D47C3;
-  text-decoration: none
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1240px;
+  margin: auto;
+}
+
+.btn{
+  padding: 14px 32px;
+  border: 1px solid;
+  
 }
 
 

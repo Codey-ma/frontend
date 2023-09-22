@@ -5,84 +5,142 @@
   max-height: 100vh;
   background-color: #f7f7f7;
   overflow-y: hidden;
+   
 }
+ 
 
-.logo-container {
+
+#signup-form{
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px; 
+  margin-right: 7px;
+  margin-top: -90px;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  margin-left: 4px;
-}
-
-.logo-second {
-  margin-top: 4px;
-  margin-left: -2px;
-}
-
-#signup-form {
-  margin-right: 150px;
-}
-
-
-#signin-form .text-medium {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #b0b0b0;
-  font-size: 1rem;
-  margin-left: 30%;
+  height: 100%; 
 }
 
 /** signup section **/
 #signup {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 4rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 1440px;
+   padding: 0 4rem; 
+ }
+
+ #signup .text-4xl {
+   font-size: 24px;
+    font-weight: medium;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
 }
+
+#signup-text{
+  margin-left: 5rem;
+  margin-bottom: 8rem;
+}
+
+#signup-form .text-3xl {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 60px;
+  margin-bottom: 0.5rem;
+}
+
+#signup-form .text-xs {
+  font-family: 'Poppins', sans-serif;
+  color: #b0b0b0;
+  font-size: 0.8rem;
+  margin-left: 15.7rem;
+  margin-bottom: 1.5rem;
+}
+
+
+#signup-form .text-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #b0b0b0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+
 
 /* Style the input fields */
 #signup-form input[type="text"],
 #signup-form input[type="password"],
+#signup-form input[type="password"],
 #signup-form input[type="number"] {
   background-color: rgba(31, 216, 145, 0.26);
-  border: none;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.7rem 1rem;
+    width: 369px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#signup-form input[type="text"]:focus,
+#signup-form input[type="password"]:focus,
+#signup-form input[type="number"]:focus {
+  background-color: rgba(31, 216, 145, 0.26);
+  border: 2px solid #1fd891; /* Change border to #1fd891 on focus */
   border-radius: 0.25rem;
   padding: 0.7rem 1rem;
   width: 369px;
   height: 62px;
-  margin-bottom: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
+
 
 #signup-form button {
   background-color: #1fd891;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   cursor: pointer;
-  height: 65px;
+  height: 59px;
   width: 369px;
   box-shadow: 0px 4px 6px rgba(77, 71, 195, 0.4);
   margin-bottom: 1.5rem;
 }
 
-.social-icon {
-  text-decoration: none;
-  color: #333;
-  margin-right: 10px;
-  transition: color 0.3s;
-  cursor: pointer;
+
+ .social-icon {
+   text-decoration: none;
+   color: #333; /* Icon color */
+   margin-right: 10px; /* Adjust spacing between icons */
+   transition: color 0.3s; /* Add a smooth color transition on hover */
+ 
+   /* Define hover effect */
+   &:hover {
+     color: #007bff; /* Change color on hover */
+   }
 }
 
-#YouCanLoginHere {
-  font-weight: bold;
-  color: #4d47c3;
+#signup #YouCanLoginHere {
+ color: #4d47c3;
+}
+
+#signup img#Saly {
+  margin-top: 150px;
+  margin-right:  75px;
+  width: 250px; 
+  height: auto; /* Maintain aspect ratio */
 }

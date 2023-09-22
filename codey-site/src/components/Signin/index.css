@@ -1,24 +1,28 @@
 .signinContainer{
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    justify-content: center;
    max-height: 100vh;
    background-color: #f7f7f7;
   
-  
 }
 
 /** logo **/
 .logo-container {
+  
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 .logo{
+  width: 64px;
+  height: 65px;
   margin-left: 4px;
 }
 .logo-second {
+  width: 80px;
+  height: auto;
   margin-top: 4px; 
   margin-left: -2px; 
 }
@@ -48,17 +52,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px; /* Adjusted max-width for better responsiveness */
+  max-width: 500px; 
   margin-right: 70px;
-  margin-top: -10px;
+  margin-top: -60px;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
   }
   
   #signin-form .text-3xl {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 60px;
     margin-bottom: 0.5rem;
-  }
+    }
   
   /* Style the input fields */
   #signin-form input[type="text"],
@@ -92,6 +100,14 @@
     margin-left: 15.7rem;
     margin-bottom: 1.5rem;
   }
+
+    
+  #signin .text-4xl {
+    font-size: 24px;
+    font-weight: medium;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+  }
   
   /* Style the login button */
   #signin-form button {
@@ -103,7 +119,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
-    height: 65px;
+    height: 59px;
     width: 369px;
     box-shadow: 0px 4px 6px rgba(77, 71, 195, 0.4);
     margin-bottom: 1.5rem;
@@ -113,27 +129,25 @@
   #signin-form .text-medium {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 18px;
     color: #b0b0b0;
+    margin-top: 1rem;
     font-size: 1rem;
-    margin-left: 30%;
+    text-align: center;
+
   }
   
   /* Style the social icons */
 
   #social-icons {
     display: flex;
-    align-items: center;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; /* Center horizontally within the div */
+    margin-top: 1rem; /* Add some top margin for spacing */
   }
   
   
-  #signin .flex-row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 32px;
-    gap: 5px;
-    width: 50%;
-    align-items: center;
-  }
   
   #signin .flex-col {
     display: flex;
@@ -143,26 +157,23 @@
   }
   
   #signin #SignInTo {
-    font-size: 200px;
+    font-size: 300px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
-  
-  #signin .text-4xl {
-    font-size: 24px;
-    font-weight: medium;
-    font-family: 'Poppins', sans-serif;
-  }
+
   
   
   
-  #signin #YouCanRegisterHere1 {
-    font-family: 'Poppins', sans-serif;
-  }
-  
+
   #signin #YouCanRegisterHere {
-    font-weight: bold;
+    font-weight: 400px;
     color: #4d47c3;
+  }
+
+  #signin-text{
+    margin-left: 5rem;
+    margin-bottom: 4rem;
   }
   
   #signin img#Saly {
