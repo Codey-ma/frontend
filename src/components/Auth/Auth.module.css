@@ -20,6 +20,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: #1fd891; */
+  width: 70%;
 }
 
 .auth__container__left__heading {
@@ -43,6 +45,7 @@
 .auth__container__left__content {
   display: flex;
   padding-top: 1.0rem;
+ 
 }
 
 .auth__container__left__content__description {
@@ -185,4 +188,90 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .auth__container {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(177, 149, 38); */
+    width: 100%;
+    overflow: hidden;
+  }
+  .auth__container__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #032719; */
+   width: 100%;
+  }
+  
+  .auth__container__left__heading {
+    color: var(--blk, #000);
+    font-family: "Poppins", sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .auth__container__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  
+.auth__container__left__heading {
+  color: var(--blk, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.auth__container__left__subheading {
+  color: var(--blk, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.auth__container__left__content {
+  display: flex;
+  padding-top: 1.0rem;
+ 
+}
+
+.auth__container__left__content__description {
+  color: var(--blk, #000);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.auth__container__left__content__description a {
+  color: var(--blk, #4d47c3);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.auth__container__left__content__image{
+  display: none;
+}
 }
