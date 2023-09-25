@@ -37,7 +37,7 @@ const Signin = () => {
                 Your Account
               </div>
               
-              <div className="font-['Poppins']">
+              <div className="font-['Poppins'] underheader-text">
                 If you don’t have an account register
               <div className="font-['Poppins']" id="YouCanRegisterHere1">
                 You can{" "}

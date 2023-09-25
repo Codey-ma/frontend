@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: center;
   max-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: white !important;
   overflow-y: hidden;
+  
    
 }
  
@@ -134,8 +135,15 @@
    }
 }
 
-#signup #YouCanLoginHere {
+#signup #YouCanLoginHere{
  color: #4d47c3;
+ font-weight: 400px;
+ font-size: 600;
+}
+
+#signup-text{
+  margin-left: 5rem;
+  margin-bottom: 4rem;
 }
 
 #signup img#Saly {
@@ -143,4 +151,71 @@
   margin-right:  75px;
   width: 250px; 
   height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for screens with a maximum width of 1240px */
+@media screen and (max-width: 1240px) {
+  /* Hide the Saly image on smaller screens */
+  #signup img#Saly {
+    display: none;
+  }
+  #signupContainer{
+    overflow: scroll;
+  }
+
+  #signup-text{
+    margin-left: -8rem;
+    margin-top: 2rem;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+  .underheader-text{
+
+    color: var(--blk, #000);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    
+  }
+
+  #signup .text-4xl {
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+
+
+  /* Center the content vertically and allow scrolling */
+  #signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+     /* Enable vertical scrolling when content overflows */
+    max-height: 70vh; /* Set a maximum height for the container */
+  }
+
+  /* Center the content horizontally */
+  #signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-right: 7px;
+    margin-top: -60px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Adjust any other styles for the mobile version here */
+  /* ... */
 }

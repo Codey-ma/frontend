@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-left: -20px;
+
+}
+
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.colors{
+
+}
+
+.nav-menu{
+    display: flex;
+    margin-left: 100px;
+}
+
+.nav-menu li{
+    padding: 0 1rem;
+}
+
+.nav-menu a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-family: Montserrat;
+   
+    
+}
+.nav-menu li:first-child a {
+    text-decoration: underline;
+    color: var(--primary-color-green, #10C843);
+  }
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1240px) {
+    .hamburger{
+        display: flex;
+    }
+    .nav-menu{
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        top: 90px;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        transition: 0.4s;
+        z-index: 2;
+        background: #fff;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    .nav-menu li{
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid #eee;      
+    }
+    .nav-menu a{
+        font-size: 1rem;   
+        text-decoration: none;
+    }
+}
+
+
+/* Add styles for the search bar */
+.searchbar {
+    display: flex;
+    display: inline-flex;
+    padding: 18px;
+    align-items: center;
+    gap: 1px;
+    border-radius: 100px;
+    border: 1px solid #E0E0E0;
+    background: #F2F2F2;
+    
+  }
+  
+  
+  /* Style the search icon */
+  .search-icon {
+    color: #1E1E1E; /* Icon color */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  

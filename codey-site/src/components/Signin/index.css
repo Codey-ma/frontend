@@ -183,4 +183,74 @@
     height: auto; /* Maintain aspect ratio */
   }
   
+/* Media query for screens with a maximum width of 1240px */
+@media screen and (max-width: 1240px) {
+  /* Hide the Saly image on smaller screens */
+  #signin img#Saly {
+    display: none;
+  }
+
+  #signin-text{
+    margin-left: -12rem;
+    margin-top: 2rem;
+  }
+
+  h1{
+    font-size: 26px;
+  }
+  .underheader-text{
+
+    color: var(--blk, #000);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    
+  }
+
+  #signin .text-4xl {
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #signin-form .text-xs {
+    font-family: 'Poppins', sans-serif;
+    color: #b0b0b0;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+  }
+
+
+
+  /* Center the content vertically and allow scrolling */
+  #signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    /* Enable vertical scrolling when content overflows */
+    max-height: 70vh; /* Set a maximum height for the container */
+  }
+
+  /* Center the content horizontally */
+  #signin-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin-right: 7px;
+    margin-top: -60px;
+    justify-content: center;
+    align-items: center;
+  }
   
+
+  /* Adjust any other styles for the mobile version here */
+  /* ... */
+}

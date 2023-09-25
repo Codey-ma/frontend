@@ -1,4 +1,11 @@
+/**Fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@100&display=swap');
+
 :root{
+  --primary: #10C843;
   --background: #f5f8ff;
 }
 
@@ -11,6 +18,7 @@
 
 ul {
   list-style-type: none;
+  
 }
 
 
@@ -28,20 +36,31 @@ a.custom-link {
   text-decoration: none;
 }
 
+.custom-btn{
+  text-decoration:none;
+}
+
 .container{
   max-width: 1240px;
   margin: auto;
 }
 
-.btn{
-  padding: 14px 32px;
-  border: 1px solid;
-  
+.btn {
+  text-align: center;
+  padding: 16px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
 }
 
 
-
-
-/**Fonts**/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
