@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import Saly from '../../assets/Saly-38.png';
+import { FaArrowRight } from 'react-icons/fa';
 import './index.css';
 
 const Hero = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  
 
   // Define the course options
   const courseOptions = [
@@ -23,15 +24,7 @@ const Hero = () => {
     setSelectedCourse(event.target.value);
   };
 
-  // Event handler for the "Register" button
-  const handleRegisterClick = () => {
-    navigate('/signup'); // Navigate to the signup page
-  };
-
-  // Event handler for the "Login" button
-  const handleLoginClick = () => {
-    navigate('/signin'); // Navigate to the signin page
-  };
+  
 
   return (
     <div className='hero'>
@@ -49,18 +42,20 @@ const Hero = () => {
             online!
           </p>
           <br />
+          <br />
 
-          {/* Use onClick to handle button clicks */}
-          <button className='btn custom-btn' onClick={handleRegisterClick}>
-            Register
-          </button>
-          <button className='btn custom-btn' onClick={handleLoginClick}>
-            Login
-          </button>
+           {/* Use Link component to navigate to the signup page */}
+           <Link to="/signup" className='btn custom-btn'>
+            Register <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
+          </Link>
+          {/* Use Link component to navigate to the signin page */}
+          <Link to="/signin" className='custom-btn login-btn'>
+            Login <FaArrowRight style={{ color: '#000', verticalAlign: 'middle', marginLeft: '5px' }}/>
+          </Link>
 
           <div>
             <br />
-            <label htmlFor="course">Select a Course:</label>
+            <br />
             <select
               id="course"
               value={selectedCourse}

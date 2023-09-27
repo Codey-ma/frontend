@@ -26,8 +26,11 @@ const handleClick = () => setClick(!click)
           <FaSearch className="search-icon" />
         </div>
         <div className="btn-group">
-          <button className='btn'>Join Us <FaArrowRight style={{color: '#fff'}}/></button>
+          <button className='btn'>
+            Join Us <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
+          </button>
         </div>
+
         <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={20} style={{color: '#333'}}/>) : (<FaBars size={20} style={{color: '#333'}} />)}
                     

@@ -8,8 +8,9 @@
 }
 .hero .left{
     padding: 1rem;
+    margin-top: 2rem;
     margin-bottom: 6rem;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .hero h1{
@@ -40,6 +41,61 @@
     height: auto;
 }
 
+.login-btn{
+    text-align: center;
+    padding: 16px 20px;
+    margin-left: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label{
+    color: #747474;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* Style the select element */
+select {
+    padding: 5px;
+    color: #747474;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* Add other styles as needed */
+  }
+  
+  /* Style the default/placeholder option */
+  select option[value=""]::before {
+    content: ""; /* Empty content */
+  }
+  
+  /* Style the other options */
+  select option::before {
+    content: ""; /* Empty content */
+  }
+  
+  /* Style the down arrow icon using the ::before pseudo-element */
+  select option[value=""]::before {
+    content: "\f078"; /* Unicode for the down arrow icon from react-icons/fa */
+    font-family: 'FontAwesome'; /* Use the FontAwesome icon font */
+    padding-right: 10px; /* Adjust the spacing between the icon and text */
+  }
+  
 @media screen and (max-width: 940px) {
     .hero .container{
         grid-template-columns: 1fr;
