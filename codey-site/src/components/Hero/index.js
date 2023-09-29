@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import Saly from '../../assets/Saly-38.png';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaSearch } from 'react-icons/fa'; // Import FaSearch
 import './index.css';
 
 const Hero = () => {
@@ -53,13 +53,14 @@ const Hero = () => {
             Login <FaArrowRight style={{ color: '#000', verticalAlign: 'middle', marginLeft: '5px' }}/>
           </Link>
 
-          <div>
+          <div className="search-bar">
             <br />
             <br />
             <select
               id="course"
               value={selectedCourse}
               onChange={handleCourseChange}
+              className="custom-select"
             >
               <option value="">Select a course</option>
               {courseOptions.map((course, index) => (
@@ -68,7 +69,21 @@ const Hero = () => {
                 </option>
               ))}
             </select>
+
+            <div class="divider"></div>
+
+              {/* Add the search bar */}
+            
+              <input type="text"  className="search-input"/>
+              <button className="btn search-btn">
+                Search<FaSearch style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '7px' }}/>
+              </button>
+            
           </div>
+
+        
+             
+          
         </div>
 
         {/* Right Side */}

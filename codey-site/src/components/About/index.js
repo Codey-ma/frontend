@@ -30,7 +30,7 @@ const About = () => {
          </p>
           <br />
         <div className="btn-group">
-          <button className='btn'>
+          <button className='btn about-btn'>
             Join Us <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
           </button>
         </div>

@@ -41,6 +41,10 @@
     background:  rgb(244, 234, 234) 80% / cover no-repeat;
 }
 
+.about-btn{
+    background-color: #5438DC;
+}
+
 
 @media screen and (max-width: 940px) {
     .about .container{

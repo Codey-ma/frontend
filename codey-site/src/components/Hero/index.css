@@ -7,7 +7,7 @@
     padding: 1rem;
 }
 .hero .left{
-    padding: 1rem;
+    padding: 3rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
     margin-left: 1.5rem;
@@ -29,6 +29,7 @@
 
 .hero .right{
     padding: 1rem;
+    
 }
 
 .hero .img-container{
@@ -39,6 +40,7 @@
 .hero img{
     width: 600px;
     height: auto;
+    margin-left: 40px;
 }
 
 .login-btn{
@@ -103,3 +105,69 @@ select {
     }
     
 }
+
+
+
+/* Style the select element */
+
+.search-section{
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 100px;
+    border: 1px solid #F9F9F9;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2.4px 8.6125px 0px rgba(0, 0, 0, 0.02), 0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+}
+.custom-select {
+    padding: 8px;
+    margin-top: 10px;
+    color: #747474;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: normal;
+    border: none; /* Remove border */
+    background-color: transparent; /* Make background transparent */
+    flex-grow: 1; /* Allow the select element to grow and fill the available space */
+  }
+
+  /* Style the custom divider */
+.divider {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #b81818; /* Change this to the color you want */
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  
+  /* Style the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 100px;
+    border: 1px solid #F9F9F9;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2.4px 8.6125px 0px rgba(0, 0, 0, 0.02), 0px 12px 53px 0px rgba(0, 0, 0, 0.04);
+        
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 14px;
+    
+  }
+
+  .search-btn{
+    margin-left:40%;
+    display: flex;
+  }
+  
+ 
+  
+  
+  
+  
