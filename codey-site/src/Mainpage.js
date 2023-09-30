@@ -5,6 +5,7 @@ import React from 'react'
 import About from './components/About';
 import Footer from './components/Footer';
 import Featured from './components/Featured';
+import Courses from './components/Courses';
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
         <Hero/>
         <Featured/>
         <About/>
+        <Courses/>
         <Footer/>
     
     </>

@@ -1,0 +1,62 @@
+.Courses{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    
+}
+
+.courses-list{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.course{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-text{
+    display: block;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.courses-list img{
+    width: 83px;
+    height: 83px;
+    flex-shrink: 0;
+}
+.course-text p{
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container-row1{
+
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #1E1E1E;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 300px;
+
+}
+
+.planet-img {
+    width: 120px;
+    height: 68px;
+    transform: rotate(5.16deg);
+    flex-shrink: 0;
+    margin-left: auto; /* Move to the opposite side */
+  }
