@@ -58,5 +58,5 @@
     height: 68px;
     transform: rotate(5.16deg);
     flex-shrink: 0;
-    margin-left: auto; /* Move to the opposite side */
+    margin-left: auto; 
   }
