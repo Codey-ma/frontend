@@ -17,19 +17,21 @@ const Footer = () => {
     <div className='footer'>
         <div className="container">
             <div className='row row1'>
+            
                 <h3>Join Us</h3>
                 <h1>Join Our Community To Have<br /> access 
                 to 100+ Free Resources &<br /> Events!</h1>
 
                 <div className="btn-group">
-          <button className='btn btn-footer'>
-            Join Our Discord <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
-          </button>
-            </div>
+                  <button className='btn btn-footer'>
+                    Join Our Discord <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
+                  </button>
+                </div>
             
         </div>
 
             <div className='row footer-row'>
+            <img src={Saly} className="saly-image" alt="Saly" />
               <div className="logo-footer">
                   <img src={Logo} className="logo" alt="Codey Logo" />
                   <p className='logo-title'>Codey</p>

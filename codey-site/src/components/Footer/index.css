@@ -142,3 +142,14 @@
   margin-top: -16rem;
   
 }
+
+.saly-image {
+  width: 500px;
+  height: auto;
+
+  position: absolute;
+  margin-top: -60rem;
+  left: -3%;
+  z-index: 1; /* Place it above the background */
+  /* Additional styles for Saly image */
+}
