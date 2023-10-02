@@ -72,9 +72,9 @@
   .container-row2 .arrow{
     
     align-items: center;
-    margin-left: -50px;
-    margin-top: -50px;
-    width: 110px;
+    margin-left: -450px;
+    margin-top: 0px;
+    width: 150px;
     height: auto;
   }
 
@@ -91,8 +91,13 @@
     font-style: normal;
     font-weight: 1100;
     line-height: normal;
-    margin-top: 70px;
+    
+  }
 
+  .container-row2 .title{
+    margin-left: 40px;
+    margin-bottom: 60px;
+    margin-top: -50px;
   }
 
   .container-row2 h3{
@@ -110,7 +115,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
     grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
-    gap: 10px; /* Spacing between grid items */
+    gap: 20px; /* Spacing between grid items */
    
 }
 

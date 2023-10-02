@@ -1,0 +1,11 @@
+.educators-section{
+    display: flex;
+    flex-direction: column;
+}
+.educator-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
+    gap: 20px; /* Spacing between grid items */
+  
+}

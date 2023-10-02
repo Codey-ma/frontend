@@ -12,13 +12,13 @@ import Divider from '@material-ui/core/Divider';
 import ScheduleIcon from '@material-ui/icons/Schedule'; // Import the Schedule icon
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'; // Import the VideoLibrary icon
 
-
+import tutorImage from '../../assets/tutor.png'
 import woman from '../../assets/girl.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 360,
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(10),
   },
   media: {
     height: 210,
@@ -101,9 +101,29 @@ export default function Course() {
             <Typography variant="body2" style={{display:"flex"}}><ScheduleIcon style={{verticalAlign: 'middle', marginTop: '-2px'}}/> 6 weeks</Typography>
             <Typography variant="body2" style={{display:"flex"}}><VideoLibraryIcon/> 15 courses</Typography>
           </div>
-          <div className={classes.tutorInfo}>
-            <Typography variant="body2">Tutor: John Doe</Typography>
-            <Typography
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop:"30px" }}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div style={{ width: '30px', height: '30px', borderRadius: '50%', overflow: 'hidden', marginRight: '10px' }}>
+                <img src={tutorImage} alt="Tutor" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                style={{
+                  color: '#353535',
+                  fontFamily: 'Poppins',
+                  fontSize: '17px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  lineHeight: 'normal',
+                }}
+              >
+                Tutor Name
+              </Typography>
+            </div>
+            <div>
+              <Typography
                 variant="body2"
                 color="textSecondary"
                 component="p"
@@ -116,8 +136,9 @@ export default function Course() {
                   lineHeight: 'normal',
                 }}
               >
-                   Free
-            </Typography>
+                Free
+              </Typography>
+            </div>
           </div>
         </CardContent>
       </CardActionArea>
