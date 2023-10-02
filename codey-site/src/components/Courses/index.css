@@ -17,8 +17,9 @@
 .course{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    
+    margin-right: 60px;
 }
 
 .course-text{
@@ -60,3 +61,63 @@
     flex-shrink: 0;
     margin-left: auto; 
   }
+
+  /*** container-row2 **/
+  .container-row2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-row2 .arrow{
+    
+    align-items: center;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 110px;
+    height: auto;
+  }
+
+  .container-row2 h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--blk, #000);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 1100;
+    line-height: normal;
+    margin-top: 70px;
+
+  }
+
+  .container-row2 h3{
+    color: var(--blk, #000);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
+    gap: 10px; /* Spacing between grid items */
+   
+}
+
+.grid-item {
+    background-color: lightblue; /* Background color for grid items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
