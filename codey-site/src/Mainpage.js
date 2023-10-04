@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Featured from './components/Featured';
 import Courses from './components/Courses';
 import Educators from './components/Educators';
+import Blogs from './components/Blogs';
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
         <About/>
         <Courses/>
         <Educators/>
+        <Blogs/>
         <Footer/>
     
     </>

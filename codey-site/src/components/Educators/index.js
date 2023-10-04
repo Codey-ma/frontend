@@ -1,18 +1,30 @@
 import React from 'react'
+import './index.css'
 import Educator1 from '../../assets/Educator1.png'
 import Educator2 from '../../assets/Educator2.png'
 import Educator3 from '../../assets/Educator3.png'
 
 import EducatorCard from '../Utils/EducatorCard'
+import Literally from '../../assets/Literally.png'
+import Computer from '../../assets/Computer.png'
+import Net from '../../assets/Net.png'
+import Light from '../../assets/Literally.png'
 
 const Educators = () => {
   return (
 
         <div className="educators-section">
-        <h2>Our Educators</h2> {/* Title in the center */}
+          <div className="Net"><img src={Net} alt="" /></div>
+        <div className="title">
+        <h1>Our Top Educators!</h1>
+        <div className="literally"><img src={Literally} alt="" /></div>
+          
+        </div> {/* Title in the center */}
+        
         
         {/* Educator Cards */}
         <div className="educator-cards">
+        <div className="Computer-right"><img src={Computer} alt="" /></div>
           <EducatorCard
             imageSrc={Educator1}
             name="Jacob Jones"
@@ -28,6 +40,14 @@ const Educators = () => {
             name="Jacob Jones"
             occupation="Data Scientist"
           />
+
+        <div className="Computer Computer-left"><img src={Computer} alt="" /></div>
+        </div>
+
+        <div>
+        <button className='btn instructor-btn'>
+            Become An Instructor
+          </button>
         </div>
       </div>
   )

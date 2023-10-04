@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 /** assets **/
 import test from '../../assets/online-test 1.png'
@@ -9,6 +10,9 @@ import Rectangle from '../../assets/Rectangle 41.png'
 import planet from '../../assets/planet.png'
 import Arrow from '../../assets/arrow.png'
 import Course from '../Utils/CourseCard';
+
+import ArrowL from '../../assets/ArrowLeft.png'
+import ArrowR from '../../assets/ArrowRight.png'
 
 const Courses = () => {
   return (
@@ -50,14 +54,27 @@ const Courses = () => {
           <h1>Our Course!</h1> 
           <h3>Courses That Cover every Topic in Coding!</h3>
         </div>
-        <div className='grid-container'>
-          <Course className="grid-item"/>
-          <Course className="grid-item"/>
-          <Course className="grid-item"/>
-          <Course className="grid-item"/>
-          <Course className="grid-item"/>
-          <Course className="grid-item"/>
-         </div>
+
+
+        <div className="courses-cards">
+            <div>
+               <img src={ArrowL} className='left-arrow' alt="Left Arrow" />
+            </div>
+            <div className='grid-container'>
+              <Course className="grid-item"/>
+              <Course className="grid-item"/>
+              <Course className="grid-item"/>
+              <Course className="grid-item"/>
+              <Course className="grid-item"/>
+              <Course className="grid-item"/>
+            </div>
+
+            <div>
+            <img src={ArrowR} className='right-arrow' alt="Left Arrow" />
+            </div>
+            </div>
+         
+
       </div>
     </div>
   )
