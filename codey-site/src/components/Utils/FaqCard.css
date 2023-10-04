@@ -1,0 +1,43 @@
+/* FaqCard.css */
+
+
+.faq-card {
+    width: 896px;
+    height: 230px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 2px solid var(--Main-Green-color, #1FD891);
+    background: var(--white, #FFF);
+    /* Buttons/ Color - Default */
+    box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .faq-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .faq-question {
+    color: var(--neutral-800, #170F49);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 127.273% */
+  }
+  
+  .faq-response {
+    color: var(--neutral-600, #6F6C90);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+  
