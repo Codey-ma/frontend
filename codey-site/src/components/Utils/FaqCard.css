@@ -16,6 +16,17 @@
     justify-content: space-between;
     
   }
+
+  .faq-icon-container {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    background: var(--Main-Green-color, #1FD891);
+    border-radius: 50%; /* This makes it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .faq-header{
     display: flex;
     flex-direction: row;

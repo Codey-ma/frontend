@@ -12,7 +12,9 @@ const FaqCard = ({ question, response }) => {
     <div className="faq-card">
       <div className="faq-header" onClick={toggleResponse}>
         <h3 className="faq-question">{question}</h3>
-        {showResponse ? <FaChevronDown /> : <FaChevronRight />}
+        <div className="faq-icon-container">
+        {showResponse ? <FaChevronDown style={{color: '#FFFFFFFF'}}/> : <FaChevronRight style={{color: '#1FD891', background: '#FFFFFFFF'}}/>}
+        </div>
       </div>
       {showResponse && <p className="faq-response">{response}</p>}
     </div>
