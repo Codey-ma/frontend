@@ -1,0 +1,15 @@
+
+
+.faqs-section{
+    display: flex;
+    flex-direction: column;
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    margin-top: 60px;
+}
