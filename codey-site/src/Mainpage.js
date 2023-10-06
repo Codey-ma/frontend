@@ -9,6 +9,7 @@ import Courses from './components/Courses';
 import Educators from './components/Educators';
 import Blogs from './components/Blogs';
 import Faqs from './components/FAQs';
+import Events from './components/Events';
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
         <About/>
         <Courses/>
         <Educators/>
+        <Events/>
         <Blogs/>
         <Faqs/>
         <Footer/>

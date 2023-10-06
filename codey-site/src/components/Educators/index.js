@@ -16,9 +16,9 @@ const Educators = () => {
         <div className="educators-section">
           <div className="Net"><img src={Net} alt="" /></div>
         <div className="title">
-        <h1>Our Top Educators!</h1>
-        <div className="literally"><img src={Literally} alt="" /></div>
-          
+          <h1>Our Top Educators!</h1>
+          <div className="literally"><img src={Literally} alt="" /></div>
+            
         </div> {/* Title in the center */}
         
         

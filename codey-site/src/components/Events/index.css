@@ -1,0 +1,125 @@
+
+.events-container{
+    width: 735px;
+    height: 647px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: var(--white, #FFF);
+    /* Cards/Short Default */
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+}
+
+.events-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; /* Adjust the gap as needed */
+    align-items: start; /* Align items at the start of each grid cell */
+  }
+  
+  .rocket-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Apply any additional styling to the rocket image container */
+  }
+  
+  .rocket-image {
+    max-width: 100%;
+    height: auto;
+    /* Apply any additional styling to the rocket image */
+  }
+
+  .face-image{
+    
+    max-width: 100%;
+    height: auto;
+    
+    
+
+  }
+  
+  .events-container {
+    
+    margin-top: -14rem;
+    margin-right: 3rem;
+  }
+
+  .face-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 310px;
+    height: 296px;
+    padding: 16px;
+    align-items: flex-start;
+    margin-top: 95px;
+    margin-left: 200px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 3px 12px 0px rgba(75, 75, 75, 0.08);
+
+   
+}
+
+  
+
+.events-header h1{
+    color: var(--blk, #000);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    width: 726px;
+    height: 90px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 100px;
+    display: inline;
+}
+
+.events-header p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #4D47C3;
+    text-align: center;
+    font-family: Paytone One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.event-color {
+    color: #4D47C3; 
+    
+  }
+  
+
+.events-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  
+  
+
+
+.events-content{
+
+
+}
+  
