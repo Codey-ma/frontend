@@ -19,7 +19,7 @@
 
 .Net img{
     
-    animation: wheel 10s infinite linear;
+    animation: net 10s infinite linear;
 }
 
 
@@ -72,25 +72,24 @@
 
 
 .Computer{
-    
     transform: rotate(60.218deg);
     flex-shrink: 0;
 }
 .Computer-left{
-    margin-right: 30px;
+    margin-right: 20px;
     margin-bottom: -16rem;
-    animation: wheel 10s infinite linear;
+    animation: left-computer 10s infinite linear;
 
 }
 
 .Computer-right{
     margin-right: 30px;
     margin-bottom: -25rem;
-    animation: wheel 10s infinite linear;
+    animation: right-computer 10s infinite linear;
 
 }
 
-@keyframes wheel {
+@keyframes net {
     0% {
       transform: rotate(0deg);
     }
@@ -98,3 +97,23 @@
       transform: rotate(360deg);
     }
  }
+
+ @keyframes left-computer {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(50%);
+    }
+ }
+
+
+ @keyframes right-computer {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(50%);
+    }
+ }
+

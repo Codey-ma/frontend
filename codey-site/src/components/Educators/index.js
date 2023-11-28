@@ -24,7 +24,7 @@ const Educators = () => {
         
         {/* Educator Cards */}
         <div className="educator-cards">
-        <div className="Computer-right"><img src={Computer} alt="" /></div>
+        <div className="Computer Computer-right"><img src={Computer} alt="" /></div>
           <EducatorCard
             imageSrc={Educator1}
             name="Jacob Jones"
