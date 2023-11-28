@@ -23,12 +23,15 @@
     align-items: center;
     /* Apply any additional styling to the rocket image container */
   }
+
+  
   
   .rocket-image {
     max-width: 100%;
     height: auto;
-    /* Apply any additional styling to the rocket image */
+    animation: spin 10s linear infinite; /* Adjust the duration and timing function as needed */
   }
+  
 
   .face-image{
     
@@ -118,8 +121,16 @@
   
 
 
-.events-content{
 
 
+/**** Animations **/
+/* Add the following CSS for the spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-20deg);
+  }
 }
-  
+

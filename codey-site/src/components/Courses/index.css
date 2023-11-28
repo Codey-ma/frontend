@@ -55,12 +55,29 @@
 }
 
 .planet-img {
-    width: 120px;
-    height: 68px;
-    transform: rotate(5.16deg);
-    flex-shrink: 0;
-    margin-left: auto; 
+  width: 120px;
+  height: 68px;
+  transform: rotate(5.16deg);
+  flex-shrink: 0;
+  margin-left: auto;
+  animation-duration: 10s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  
+ 
+
+  50% {
+    transform: translateX(-50%);;
+  }
+}
+
 
   /*** container-row2 **/
   .container-row2{
@@ -140,4 +157,8 @@
 .courses-cards{
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width:1240px) {
+ 
 }

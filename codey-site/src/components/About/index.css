@@ -5,12 +5,20 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    
+    position: relative;
+    left: 50px;
+    right: 50px;
 }
 .about .left{
     padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
     margin-left: 1.5rem;
+}
+
+.paragraph{
+    
 }
 
 .about h3{
@@ -43,6 +51,8 @@
 
 .about-btn{
     background-color: #5438DC;
+    position: absolute;
+    left: 50px;
 }
 
 

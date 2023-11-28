@@ -1,9 +1,7 @@
 
 .footer-menu{
     display: flex;
-    flex-direction: row;
-    
-    
+    flex-direction: row;   
 }
 .footer-menu a{
     text-decoration: none;
@@ -102,8 +100,7 @@
   
   .social-icons {
     display: flex;
-    margin-right: -70px;
-    
+    margin-right: -70px;  
 
   }
   
@@ -153,3 +150,5 @@
   z-index: 1; /* Place it above the background */
   /* Additional styles for Saly image */
 }
+
+

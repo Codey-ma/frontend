@@ -13,7 +13,7 @@ const EventCard = ({ title, date, description }) => {
   return (
     <div className="event-card">
       <div className="event-header">
-        <h3>Coming Soon!</h3>
+        {showEvent ? <h2>{title}</h2> :<h3>Coming Soon!</h3> }
         <div className="event-icon-container" onClick={toggleEvent}>
           {showEvent ? <AiOutlineMinus /> :
           <AiOutlinePlus /> }
@@ -21,7 +21,7 @@ const EventCard = ({ title, date, description }) => {
       </div>
       {showEvent &&
         <div className='events-details'>
-          <h2>{title}</h2>
+          
           <p className="event-date">Date:{date}</p>
           <p className="event-description">{description}</p>
           <button className="btn remind-button">Remind Me</button>

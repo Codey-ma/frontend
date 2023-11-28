@@ -17,6 +17,12 @@
     flex-shrink: 0;
 }
 
+.Net img{
+    
+    animation: wheel 10s infinite linear;
+}
+
+
 
 .educators-section h1{
 
@@ -73,9 +79,22 @@
 .Computer-left{
     margin-right: 30px;
     margin-bottom: -16rem;
+    animation: wheel 10s infinite linear;
+
 }
 
 .Computer-right{
     margin-right: 30px;
     margin-bottom: -25rem;
+    animation: wheel 10s infinite linear;
+
 }
+
+@keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }

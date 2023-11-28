@@ -1,0 +1,85 @@
+
+/* BlogCardDesktop.css */
+/* BlogCardDesktop.css */
+.root {
+    display: flex;
+    width: 317.921px;
+    height: 378.81px;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 3px 12px 0px rgba(75, 75, 75, 0.08);
+    margin-bottom: 15px;
+  }
+  
+  .media {
+    height: 140px;
+  }
+  
+  .blogTitle {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .publisherName {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .dateAndDuration {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+  }
+  
+  
+
+  @media screen and (max-width: 1240px) {
+    /* BlogCardMobile.css */
+.root {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0px 3px 12px 0px rgba(75, 75, 75, 0.08);
+    margin-bottom: 15px;
+  }
+  
+  .media {
+    height: 200px; /* Adjust as needed */
+  }
+  
+  .blogTitle {
+    padding: 16px; /* Add padding to the title */
+  }
+  
+  profileInfo {
+    padding: 16px; /* Add padding to the profile info */
+  }
+  
+  .publisherName {
+    margin: 10px 0; /* Add margin to separate elements */
+  }
+  
+  /* Add the rest of your mobile-specific styles here */
+  
+  }

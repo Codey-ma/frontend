@@ -5,8 +5,10 @@ import { FaBars, FaTimes, FaSearch } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
-const handleClick = () => setClick(!click)
+
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(click);
 
   return (
     <div className="header">
@@ -15,13 +17,22 @@ const handleClick = () => setClick(!click)
           <img src={Logo} className="logo" alt="Codey Logo" />
           <h1>Codey</h1>
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/'>Team</a></li>
-          <li><a href='/'>Events</a></li>
-          <li><a href='/'>Courses</a></li>
-          <li><a href='/'>Blogs</a></li>
-        </ul>
+
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? <FaTimes /> : <FaBars className='fa-bars-btn'/>}
+        </div>
+        <div className={click ? 'nav-menu active' : 'nav-menu'}>
+
+          <ul>
+            <li className='nav-item'><a href='/' className='active'>Home</a></li>
+            <li className='nav-item'><a href='/'>Team</a></li>
+            <li className='nav-item'><a href='/'>Events</a></li>
+            <li className='nav-item'><a href='/'>Courses</a></li>
+            <li className='nav-item'><a href='/'>Blogs</a></li>
+          </ul>
+
+        </div>
+        
         <div className="searchbar">
           <FaSearch className="search-icon" />
         </div>
@@ -31,10 +42,6 @@ const handleClick = () => setClick(!click)
           </button>
         </div>
 
-        <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={20} style={{color: '#333'}}/>) : (<FaBars size={20} style={{color: '#333'}} />)}
-                    
-                </div>
       </div>
     </div>
   );

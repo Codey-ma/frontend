@@ -6,7 +6,7 @@
     flex-shrink: 0;
     background: rgba(84, 56, 220, 0.76);
     justify-content: space-evenly;
-    margin-top: 600px;
+    margin-top: 100px;
   }
   
   .blog-cards {
@@ -84,3 +84,19 @@
     border-radius: 8px;
     background: var(--Main-Green-color, #1FD891);
   }
+
+  @media screen and (max-width: 1240px) {
+      .Blogs h1 {
+        font-size: 24px; /* Further decrease font size for smaller screens */
+      }
+  
+      .Blogs p {
+        font-size: 14px; /* Further decrease font size for smaller screens */
+        line-height: 20px; /* Adjust line height for smaller screens */
+      }
+  
+      .btn-blog-group {
+        margin-top: 10px; /* Increase the margin for smaller screens */
+      }
+    }
+  
