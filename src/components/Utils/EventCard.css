@@ -1,0 +1,76 @@
+.event-card{
+    
+    flex-shrink: 0;
+    
+    background: var(--white, #FFF);
+    /* Buttons/ Color - Default */
+    box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events details{
+    display: flex;
+    flex-direction: column;
+}
+
+.events-header h2{
+    color: var(--primary-color-1, #4A3AFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 127.273% */
+}
+
+.remind-button{
+    display: flex;
+    width: 182.859px;
+    height: 13.64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 227px;
+    height: 36.429px;
+    flex-shrink: 0;
+    border-radius: 96px;
+    background: rgba(74, 58, 255, 0.87);
+    margin-left: 200px;
+    margin-top: 30px;
+
+}
+
+.event-icon-container{
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.event-header h3{
+    color: var(--neutral-800, #170F49);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}

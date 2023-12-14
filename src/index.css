@@ -1,0 +1,73 @@
+/**Fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Public+Sans:wght@200;400&family=Roboto:wght@500&display=swap');
+
+
+:root{
+  --primary: #10C843;
+  --background: #f5f8ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+ul {
+  list-style-type: none;
+  
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+
+}
+a.custom-link {
+  color: #4D47C3;
+  text-decoration: none;
+}
+
+.custom-btn{
+  text-decoration:none;
+}
+
+.container{
+  
+  margin: 0;
+}
+
+.btn {
+  text-align: center;
+  padding: 16px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+
+

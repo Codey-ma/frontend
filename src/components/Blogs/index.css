@@ -1,0 +1,102 @@
+.Blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1350px;
+    flex-shrink: 0;
+    background: rgba(84, 56, 220, 0.76);
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  
+  .blog-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    
+  }
+  
+  .Blogs h1 {
+    color: var(--blk, #000);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    
+  }
+
+  .Blogs p{
+    color: var(--blk, #000);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+  
+  .Blogs .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    margin-top: 50px;
+  }
+  
+ 
+  
+  .blog-btn {
+    width: 244.555px;
+    height: 61.429px;
+    flex-shrink: 0;
+    border-radius: 96px;
+    background: #0163E0;
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .btn-blog-group{
+    margin-top: -400px;
+  }
+  
+  .blog-btn{
+    display: flex;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Main-Green-color, #1FD891);
+  }
+
+  @media screen and (max-width: 1240px) {
+      .Blogs h1 {
+        font-size: 24px; /* Further decrease font size for smaller screens */
+      }
+  
+      .Blogs p {
+        font-size: 14px; /* Further decrease font size for smaller screens */
+        line-height: 20px; /* Adjust line height for smaller screens */
+      }
+  
+      .btn-blog-group {
+        margin-top: 10px; /* Increase the margin for smaller screens */
+      }
+    }
+  
