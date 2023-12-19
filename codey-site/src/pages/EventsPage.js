@@ -62,6 +62,7 @@ const EventsPage = () => {
       <Navbar />
 
       <div className="events-page">
+        <h1>OUR  EVENTS!</h1>
         <section className="event-categories">
           <ul>
             {eventCategories.map((category) => (

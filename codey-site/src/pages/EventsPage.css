@@ -8,6 +8,11 @@
     align-items: center;
     margin-bottom: 5rem;
   }
+  .events-page h1{
+    font-size: 48px;
+        color: #000000;
+        margin-bottom: 7rem;
+  }
   
   .event-categories {
     margin-bottom: 20px;
