@@ -201,6 +201,12 @@ const TeamsPage = () => {
 
   const teamMembersRows = chunkArray(teamData[activeCategory], 1);
 
+  const dynamicFooterContent = {
+    title: 'Apply to Become A Staff Member!',
+    subtitle: 'Join our team and make a difference!',
+    buttonText: 'Apply',
+    image: false 
+  };
 
   return (
     <>
@@ -242,7 +248,7 @@ const TeamsPage = () => {
         </section>
 
       </div>
-      <Footer />
+      <Footer dynamicContent={dynamicFooterContent} />
     </>
   );
 };

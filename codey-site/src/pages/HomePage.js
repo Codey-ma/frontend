@@ -11,6 +11,20 @@ import Programs from '../components/Programs/Programs';
 import Navbar from '../components/Navbar/Navbar';
 
 const HomePage = () => {
+
+  const dynamicFooterContent = {
+    title: "Join Us",
+   
+    subtitle: (
+    <div>
+        Join Our Community To Have <br /> 
+        Access To 100+ Free Resources &<br /> 
+        Events!
+      </div>
+      ),
+    buttonText: 'Join Our Discord',
+    image1: true
+  };
   return (
     <>
         <Navbar/>
@@ -21,7 +35,7 @@ const HomePage = () => {
         <Events/>
         <Educators/>
         <Faqs/>
-        <Footer/>
+        <Footer dynamicContent={dynamicFooterContent}/>
     
     </>
   )

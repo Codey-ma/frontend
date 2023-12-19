@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../../assets/codey-logo.png';
-import Rectangle from '../../assets/Rectangle 19.png';
 import Saly from '../../assets/Saly-1.png';
+import Saly1 from '../../assets/Saly-19.png';
 import { FaArrowRight, FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa';
 
 
 import './Footer.css'
-const Footer = () => {
+const Footer = ({dynamicContent}) => {
   return (
 
     <>
@@ -16,22 +16,26 @@ const Footer = () => {
     </div>
     <div className='footer'>
         <div className="container">
-            <div className='row row1'>
-            
-                <h3>Join Us</h3>
-                <h1>Join Our Community To Have<br /> access 
-                to 100+ Free Resources &<br /> Events!</h1>
-
-                <div className="btn-group">
-                  <button className='btn btn-footer'>
-                    Join Our Discord <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
-                  </button>
-                </div>
-            
-        </div>
+        <div className='row row1'>
+            <h3>{dynamicContent.title}</h3>
+            <h1>{dynamicContent.subtitle}</h1>
+            <div className="btn-group">
+              <button className='btn btn-footer'>
+                {dynamicContent.buttonText} <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
+              </button>
+            </div>
+          </div>
 
             <div className='row footer-row'>
-            <img src={Saly} className="saly-image" alt="Saly" />
+              {dynamicContent.image1 
+              ?   <img src={Saly} className="saly-image" alt="Saly" /> : 
+              ''
+              
+              }
+              {dynamicContent.image2
+              ? <img src={Saly1} className="saly-image1" alt="Saly" /> :
+              ''
+              }
               <div className="logo-footer">
                   <img src={Logo} className="logo" alt="Codey Logo" />
                   <p className='logo-title'>Codey</p>
