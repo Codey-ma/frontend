@@ -8,7 +8,8 @@ import EducatorCard from '../Utils/EducatorCard'
 import Literally from '../../assets/Literally.png'
 import Computer from '../../assets/Computer.png'
 import Net from '../../assets/Net.png'
-import Light from '../../assets/Literally.png'
+import Light1 from '../../assets/light1.png'
+import Light2 from '../../assets/light2.png'
 
 const Educators = () => {
   return (
@@ -16,7 +17,11 @@ const Educators = () => {
         <div className="educators-section">
           <div className="Net"><img src={Net} alt="" /></div>
         <div className="title">
+        <div className="light left-light"><img src={Light1} alt="" /></div>
+
           <h1>Our Top Educators!</h1>
+          <div className="light right-light"><img src={Light2} alt="" /></div>
+
           <div className="literally"><img src={Literally} alt="" /></div>
             
         </div> {/* Title in the center */}

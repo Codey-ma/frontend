@@ -5,7 +5,7 @@ import Saly from '../../assets/Saly-1.png';
 import { FaArrowRight, FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa';
 
 
-import './index.css'
+import './Footer.css'
 const Footer = () => {
   return (
 
@@ -39,10 +39,10 @@ const Footer = () => {
               <div className="footer-menu">
                 <ul >
                   <li><a href='/'>Home</a></li>
-                  <li><a href='/'>Team</a></li>
+                  <li><a href='/'>Teams</a></li>
+                  <li><a href='/'>Programs</a></li>
                   <li><a href='/'>Events</a></li>
-                  <li><a href='/'>Courses</a></li>
-                  <li><a href='/'>Blogs</a></li>
+                  <li><a href='/'>Donate</a></li>
                 </ul>
               </div>
 

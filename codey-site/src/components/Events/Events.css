@@ -1,7 +1,6 @@
 
 .events-container{
     width: 735px;
-    height: 647px;
     flex-shrink: 0;
     border-radius: 18px;
     background: var(--white, #FFF);
@@ -52,18 +51,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 10;
     width: 310px;
     height: 296px;
     padding: 16px;
     align-items: flex-start;
-    margin-top: 95px;
+    margin-top: 70px;
     margin-left: 200px;
     gap: 10px;
     flex-shrink: 0;
     border-radius: 24px;
     background: var(--white, #FFF);
-    box-shadow: 0px 3px 12px 0px rgba(75, 75, 75, 0.08);
+    box-shadow: 0px 3px 120px 4px rgba(225, 2, 2, 0.08);
 
    
 }

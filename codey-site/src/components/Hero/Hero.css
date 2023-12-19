@@ -1,7 +1,6 @@
 .hero .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -10,7 +9,7 @@
     padding: 3rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
 }
 
 .hero h1{

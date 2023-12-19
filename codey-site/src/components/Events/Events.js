@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './Events.css'
 
 
 import face from '../../assets/Rectangle 16.png'
@@ -14,7 +14,7 @@ const Events = () => {
     <>
     
       <div className="events-header">
-        <h1>Our Future <span class="event-color">Events</span></h1>
+        <h1>Our Upcoming <span class="event-color">Events</span></h1>
         <p>Our future events will be here</p>
       </div>
       <div className="events-section">

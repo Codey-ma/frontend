@@ -1,10 +1,10 @@
-.Courses{
+.Programs{
     display: grid;
     grid-template-columns: repeat(1,2fr);
     margin-bottom: 0;
 }
 
-.courses-list{
+.Programs-list{
     display: flex;
     flex-direction: row;
     margin-left: 20px;
@@ -29,7 +29,7 @@
     margin-top: 5px;
 }
 
-.courses-list img{
+.Programs-list img{
     width: 83px;
     height: 83px;
     flex-shrink: 0;
@@ -48,8 +48,9 @@
     flex-shrink: 0;
     border-radius: 14px;
     background: #1E1E1E;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+   
     height: 300px;
 
 }
@@ -71,8 +72,6 @@
   0% {
     transform: rotate(0deg);
   }
-  
- 
 
   50% {
     transform: translateX(-50%);;
@@ -81,18 +80,18 @@
 
 
   /*** container-row2 **/
-  .container-row2{
+.container-row2{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .container-row2 .arrow{
-    
+ .container-row2 .arrow{
+    position: relative;
     align-items: center;
-    margin-left: -450px;
-    margin-top: 0px;
-    width: 150px;
+    right: 340px;
+    margin-top: 10px;
+    width: 160px;
     height: auto;
   }
 
@@ -112,7 +111,7 @@
     
   }
 
-  .container-row2 .title{
+  .Programs .container-row2 .title{
     margin-left: 40px;
     margin-bottom: 60px;
     margin-top: -50px;
@@ -129,11 +128,10 @@
 
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
-    gap: 20px; /* Spacing between grid items */
+  .Programs .grid-container {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
    
 }
 
@@ -145,19 +143,33 @@
     font-size: 24px;
 }
 
-.left-arrow,
+
 .right-arrow {
   font-size: 24px; /* Adjust the size as needed */
   color: #000; /* Arrow color */
   cursor: pointer;
-  margin-top: 450px;
-  padding: 3rem;
   
 }
 
-.courses-cards{
+.Programs-cards{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.Programs .ellipsis {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.Programs .ellipsis-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1FD891; /* Change color as needed */
 }
 
 @media screen and (max-width:1240px) {

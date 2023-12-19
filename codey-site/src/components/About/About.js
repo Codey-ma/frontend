@@ -1,7 +1,7 @@
 import React from 'react';
 import Saly from '../../assets/Saly-10.png';
 import { FaArrowRight } from 'react-icons/fa';
-import './index.css'
+import './About.css'
 
 const About = () => {
   return (

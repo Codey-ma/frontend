@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import './index.css';
+import './Navbar.css';
 import Logo from '../../assets/codey-logo.png';
 import { FaBars, FaTimes, FaSearch } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(click);
+  const handleClick = () => setClick(!click);
 
   return (
     <div className="header">
@@ -24,11 +25,12 @@ const Navbar = () => {
         <div className={click ? 'nav-menu active' : 'nav-menu'}>
 
           <ul>
-            <li className='nav-item'><a href='/' className='active'>Home</a></li>
-            <li className='nav-item'><a href='/'>Team</a></li>
-            <li className='nav-item'><a href='/'>Events</a></li>
-            <li className='nav-item'><a href='/'>Courses</a></li>
-            <li className='nav-item'><a href='/'>Blogs</a></li>
+            <li className='nav-item'><Link to='/' className='active'>Home</Link></li>
+            <li className='nav-item'><Link to='/teams'>Teams</Link></li>
+            <li className='nav-item'><Link to='/events'>Events</Link></li>
+            <li className='nav-item'><Link to='/programs'>Programs</Link></li>
+            <li className='nav-item'><Link to='/donate'>Donate</Link></li>
+        
           </ul>
 
         </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import Saly from '../../assets/Saly-38.png';
 import { FaArrowRight, FaSearch } from 'react-icons/fa'; // Import FaSearch
-import './index.css';
+import './Hero.css';
 
 const Hero = () => {
   
@@ -45,12 +45,12 @@ const Hero = () => {
           <br />
 
            {/* Use Link component to navigate to the signup page */}
-           <Link to="/signup" className='btn custom-btn'>
-            Register <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
+           <Link to="/programs" className='btn custom-btn'>
+            Programs <FaArrowRight style={{ color: '#fff', verticalAlign: 'middle', marginLeft: '5px' }}/>
           </Link>
           {/* Use Link component to navigate to the signin page */}
-          <Link to="/signin" className='custom-btn login-btn'>
-            Login <FaArrowRight style={{ color: '#000', verticalAlign: 'middle', marginLeft: '5px' }}/>
+          <Link to="/events" className='custom-btn login-btn'>
+            Events <FaArrowRight style={{ color: '#000', verticalAlign: 'middle', marginLeft: '5px' }}/>
           </Link>
 
           <div className="search-bar">
