@@ -15,7 +15,7 @@
       /* TeamsPage.css */
 
 .teams-page {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .teams-header {
@@ -35,7 +35,7 @@
 }
 
 .team-categories {
-  text-align: center;
+  
 }
 
 .team-categories ul {

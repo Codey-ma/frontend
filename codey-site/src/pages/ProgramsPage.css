@@ -1,0 +1,44 @@
+
+.programs-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.programs-page h1{
+        font-size: 48px;
+        color: #000000;
+        margin-bottom: 16px;
+  }
+
+  .programs-page p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .programs-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .programs-page .search-bar{
+    margin-bottom: 40px;
+    width: fit-content;
+  }
+  .divider {
+    display: none;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+ 
+  

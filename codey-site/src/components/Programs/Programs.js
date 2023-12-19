@@ -75,7 +75,7 @@ const Programs = () => {
             <Course className={`grid-item ${slideIndex === 1 ? 'active' : ''}`} />
             <Course className={`grid-item ${slideIndex === 2 ? 'active' : ''}`} />
         
-            </div>
+        </div>
 
             <div>
             <img
