@@ -130,6 +130,7 @@
 
   .Programs .grid-container {
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     gap: 20px;
    
@@ -144,11 +145,10 @@
 }
 
 
-.right-arrow {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #000; /* Arrow color */
+.Programs .right-arrow {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
   cursor: pointer;
-  
 }
 
 .Programs-cards{
@@ -159,17 +159,25 @@
   margin-left: 50px;
 }
 
+
 .Programs .ellipsis {
   display: flex;
   gap: 5px;
   margin-top: 10px;
 }
 
-.Programs .ellipsis-dot {
+.Programs .ellipsis-dot-active {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #1FD891; /* Change color as needed */
+}
+
+.Programs .ellipsis-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #656967; /* Change color as needed */
 }
 
 @media screen and (max-width:1240px) {

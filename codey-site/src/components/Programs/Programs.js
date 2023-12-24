@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Programs.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Slider from "react-slick";
 
 /** assets **/
 import test from '../../assets/online-test 1.png'
@@ -14,18 +15,50 @@ import Course from '../Utils/CourseCard';
 import ArrowL from '../../assets/ArrowLeft.png'
 import ArrowR from '../../assets/ArrowRight.png'
 
+
+const coursesData = [
+  {
+    category: 'Web Development',
+    rating: 5,
+    title: 'Full Stack Web Development Bootcamp',
+    schedule: '8 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+  {
+    category: 'Data Science',
+    rating: 4,
+    title: 'Introduction to Machine Learning',
+    schedule: '6 weeks',
+    numberOfCourses: 15,
+    tutorName: 'Jane Smith',
+    coursePrice: '$49.99',
+  },
+  {
+    category: 'Web Development',
+    rating: 5,
+    title: 'Full Stack Web Development Bootcamp',
+    schedule: '8 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+];
+
+
 const Programs = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
+
   const handleNextSlide = () => {
-    // Update the logic for sliding to the next card
-    // You can adjust the logic based on your needs
-    setSlideIndex((prevIndex) => (prevIndex + 1) % 3); // Assuming 3 cards for example
+    setSlideIndex((prevIndex) => (prevIndex + 1) % 3);
+
   };
 
   const handlePrevSlide = () => {
     // Update the logic for sliding to the previous card
-    setSlideIndex((prevIndex) => (prevIndex - 1 + 3) % 3); // Assuming 3 cards for example
+    setSlideIndex((prevIndex) => (prevIndex - 1 + 3) % 3); 
   };
   
   return (
@@ -68,13 +101,24 @@ const Programs = () => {
           <h3>Programs That Cover every Topic in Coding! FOR FREE!</h3>
         </div>
 
+        
+
 
         <div className="Programs-cards">
             <div className='grid-container'>
+
+              {/* Map through each course using slider */}
+
+            
+            {coursesData.map((course, i) => (
+                <Course key={i} courseData={course}/>
+                ))}
+
+            {/* 
             <Course className={`grid-item ${slideIndex === 0 ? 'active' : ''}`} />
             <Course className={`grid-item ${slideIndex === 1 ? 'active' : ''}`} />
             <Course className={`grid-item ${slideIndex === 2 ? 'active' : ''}`} />
-        
+             */}
         </div>
 
             <div>
@@ -88,6 +132,7 @@ const Programs = () => {
             </div>
             {/* Ellipsis dots */}
         <div className="ellipsis">
+
           <div className={`ellipsis-dot ${slideIndex === 0 ? 'active' : ''}`} />
           <div className={`ellipsis-dot ${slideIndex === 1 ? 'active' : ''}`} />
           <div className={`ellipsis-dot ${slideIndex === 2 ? 'active' : ''}`} />

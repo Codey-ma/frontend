@@ -22,9 +22,9 @@ const EventCard = ({ title, date, description }) => {
       {showEvent &&
         <div className='events-details'>
           
-          <p className="event-date">Date:{date}</p>
-          <p className="event-description">{description}</p>
-          <button className="btn remind-button">Remind Me</button>
+          <p className="event-date"><h3>Date:</h3>{date}</p>
+          <p className="event-description"><h3>Description:</h3> <br />{description}</p>
+          <button className="btn remind-button">Enroll</button>
         </div>
       }
       

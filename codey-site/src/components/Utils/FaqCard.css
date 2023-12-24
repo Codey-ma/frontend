@@ -3,10 +3,11 @@
 
 .faq-card {
     width: 896px;
-    height: 230px;
+    height: fit-content;
     flex-shrink: 0;
     border-radius: 14px;
-    border: 2px solid var(--Main-Green-color, #1FD891);
+    border: 2px solid var(--Main-Green-color, #eef2f1);
+    flex-shrink: 0;
     background: var(--white, #FFF);
     /* Buttons/ Color - Default */
     box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);

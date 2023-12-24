@@ -3,7 +3,7 @@ import Logo from '../../assets/codey-logo.png';
 import Saly from '../../assets/Saly-1.png';
 import Saly1 from '../../assets/Saly-19.png';
 import { FaArrowRight, FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 
 import './Footer.css'
 const Footer = ({dynamicContent}) => {
@@ -42,11 +42,13 @@ const Footer = ({dynamicContent}) => {
               </div>
               <div className="footer-menu">
                 <ul >
-                  <li><a href='/'>Home</a></li>
-                  <li><a href='/'>Teams</a></li>
-                  <li><a href='/'>Programs</a></li>
-                  <li><a href='/'>Events</a></li>
-                  <li><a href='/'>Donate</a></li>
+                {/* map through the array of menu items and create list items */}
+
+                  <li ><Link to='/' className='active'>Home</Link></li>
+                  <li ><Link to='/teams'>Teams</Link></li>
+                  <li ><Link to='/events'>Events</Link></li>
+                  <li ><Link to='/programs'>Programs</Link></li>
+                  <li ><Link to='/donate'>Donate</Link></li>
                 </ul>
               </div>
 

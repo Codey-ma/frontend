@@ -9,16 +9,18 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import StarIcon from '@material-ui/icons/Star';
 import Divider from '@material-ui/core/Divider';
-import ScheduleIcon from '@material-ui/icons/Schedule'; // Import the Schedule icon
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'; // Import the VideoLibrary icon
+import ScheduleIcon from '@material-ui/icons/Schedule';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 
-import tutorImage from '../../assets/tutor.png'
+import tutorImage from '../../assets/tutor.png';
 import woman from '../../assets/girl.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 360,
     marginBottom: theme.spacing(2),
+    boxShadow:
+    "0px 14px 80px rgba(59, 79, 123, 0.1), 0px 10px 50px rgba(59, 79, 123, 0. 4)",
   },
   media: {
     height: 210,
@@ -51,15 +53,27 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: '110px'
+    marginLeft: '110px',
   },
   joinButton: {
     borderRadius: '25px',
   },
 }));
+;
 
-export default function Course() {
+export default function Course({ courseData }) {
   const classes = useStyles();
+
+  const {
+    category,
+    rating,
+    title,
+    schedule,
+    numberOfCourses,
+    tutorImageSrc = {tutorImage},
+    tutorName,
+    coursePrice,
+  } = courseData;
 
   return (
     <Card className={classes.root}>
@@ -73,70 +87,37 @@ export default function Course() {
         />
         <CardContent>
           <div className={classes.category}>
-            <Typography variant="body2">UX/UI Design</Typography>
+            <Typography variant="body2">{category}</Typography>
             <div className={classes.rating}>
-              <StarIcon  />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon/>
+              {Array.from({ length: rating }).map((_, index) => (
+                <StarIcon key={index} />
+              ))}
             </div>
           </div>
-          <Typography 
-          variant="h5" 
-          className={classes.title}
-          style={{
-            color: 'var(--blk, #000)',
-            fontFamily: 'Poppins',
-            fontSize: '20px',
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: 'normal',
-          }}
-          >
-          The Ultimate Python Course for Beginners
+          <Typography variant="h5" className={classes.title}>
+            {title}
           </Typography>
           <Divider className={classes.divider} />
           <div className={classes.courseInfo}>
-            <Typography variant="body2" style={{display:"flex"}}><ScheduleIcon style={{verticalAlign: 'middle', marginTop: '-2px'}}/> 6 weeks</Typography>
-            <Typography variant="body2" style={{display:"flex"}}><VideoLibraryIcon/> 15 courses</Typography>
+            <Typography variant="body2" style={{ display: 'flex' }}>
+              <ScheduleIcon style={{ verticalAlign: 'middle', marginTop: '-2px' }} /> {schedule}
+            </Typography>
+            <Typography variant="body2" style={{ display: 'flex' }}>
+              <VideoLibraryIcon /> {numberOfCourses} courses
+            </Typography>
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop:"30px" }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '30px' }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={{ width: '30px', height: '30px', borderRadius: '50%', overflow: 'hidden', marginRight: '10px' }}>
-                <img src={tutorImage} alt="Tutor" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={tutorImageSrc} alt="Tutor" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                component="p"
-                style={{
-                  color: '#353535',
-                  fontFamily: 'Poppins',
-                  fontSize: '17px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  lineHeight: 'normal',
-                }}
-              >
-                Tutor Name
+              <Typography variant="body2" color="textSecondary" component="p">
+                {tutorName}
               </Typography>
             </div>
             <div>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                component="p"
-                style={{
-                  color: '#FF2626',
-                  fontFamily: 'Poppins',
-                  fontSize: '20px',
-                  fontStyle: 'normal',
-                  fontWeight: 600,
-                  lineHeight: 'normal',
-                }}
-              >
-                Free
+              <Typography variant="body2" color="textSecondary" component="p">
+                {coursePrice}
               </Typography>
             </div>
           </div>
@@ -144,12 +125,8 @@ export default function Course() {
       </CardActionArea>
       <CardActions>
         <div className={classes.buttonContainer}>
-          <Button
-            variant="contained"
-            style={{ backgroundColor: '#1FD891', 'alignItems': 'center' }}
-            className={classes.joinButton}
-          >
-            Join Course
+          <Button variant="contained" style={{ backgroundColor: '#1FD891', 'alignItems': 'center' }} className={classes.joinButton}>
+            LEARN MORE
           </Button>
         </div>
       </CardActions>

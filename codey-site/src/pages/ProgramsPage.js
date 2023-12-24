@@ -3,6 +3,36 @@ import Navbar from '../components/Navbar/Navbar'
 import './ProgramsPage.css'
 import { FaSearch } from 'react-icons/fa';
 import Course from '../components/Utils/CourseCard';
+
+const coursesData = [
+  {
+    category: 'Web Development',
+    rating: 5,
+    title: 'Full Stack Web Development Bootcamp',
+    schedule: '8 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+  {
+    category: 'Data Science',
+    rating: 4,
+    title: 'Introduction to Machine Learning',
+    schedule: '6 weeks',
+    numberOfCourses: 15,
+    tutorName: 'Jane Smith',
+    coursePrice: '$49.99',
+  },
+  {
+    category: 'Web Development',
+    rating: 5,
+    title: 'Full Stack Web Development Bootcamp',
+    schedule: '8 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+];
 const ProgramsPage = () => {
   return (
     <>
@@ -30,15 +60,9 @@ const ProgramsPage = () => {
         <section className="programs-grid">
           {/* Add program cards */}
           <div className='grid-container'>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
+          {coursesData.map((course, i) => (
+                <Course key={i} courseData={course}/>
+                ))}
           </div>
         </section>
       </div>
