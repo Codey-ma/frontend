@@ -32,6 +32,42 @@ const coursesData = [
     tutorName: 'John Doe',
     coursePrice: 'Free',
   },
+  {
+    category: 'Android Development',
+    rating: 5,
+    title: 'Android Development Bootcamp',
+    schedule: '6 weeks',
+    numberOfCourses: 20,
+    tutorName: 'Johnathan Doe',
+    coursePrice: 'Free',
+  },
+  {
+    category: 'Cloud Computing',
+    rating: 5,
+    title: 'Cloud Engineer',
+    schedule: '10 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+  {
+    category: 'Cloud Engineering',
+    rating: 5,
+    title: 'Cloud Engineering',
+    schedule: '10 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
+  {
+    category: 'Blockchain Development',
+    rating: 5,
+    title: 'Blockchain & Web3',
+    schedule: '10 weeks',
+    numberOfCourses: 20,
+    tutorName: 'John Doe',
+    coursePrice: 'Free',
+  },
 ];
 const ProgramsPage = () => {
   return (
